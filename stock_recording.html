@@ -2,16 +2,15 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-
-<link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
-.mac-os-11 { --title-bar-height:28px; }
+<title>stock_recording</title><link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -28,7 +27,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font: inherit; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
@@ -55,8 +54,8 @@ tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
-.CodeMirror-linenumber { user-select: none; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -66,8 +65,8 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping pre { white-space: pre; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
-.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
@@ -75,7 +74,7 @@ div.hr:focus { cursor: none; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -88,15 +87,14 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
-  .typora-export-show-outline .typora-export-sidebar { display: none; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
 #write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
@@ -133,72 +131,37 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
-code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom: 0px; }
+table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-.md-expand mark .md-meta { opacity: 0.3 !important; }
-mark .md-meta { color: rgb(0, 0, 0); }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 @media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-fences.md-fences-math { font-size: 1em; }
-.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
-.md-fences-advanced:not(.md-focus) { background: inherit; }
-.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
-.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
-.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
-.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) {
-  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
-}
-@media screen and (max-width: 800px) {
-  .typora-export-sidebar { display: none; }
-}
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
-.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
-.outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
-.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ""; }
-.outline-h1 > .outline-item { padding-left: 0px; }
-.outline-h2 > .outline-item { padding-left: 1em; }
-.outline-h3 > .outline-item { padding-left: 2em; }
-.outline-h4 > .outline-item { padding-left: 3em; }
-.outline-h5 > .outline-item { padding-left: 4em; }
-.outline-h6 > .outline-item { padding-left: 5em; }
-.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
-.outline-label:hover { text-decoration: underline; }
-.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
-.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
-.outline-children { display: none; }
-.info-panel-tab-wrapper { display: none; }
-.outline-item-open > .outline-children { display: block; }
-.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
-.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
-.typora-export-collapse-outline .outline-children { display: none; }
-.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
-.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
-.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
-.md-inline-math-container mjx-container { zoom: 0.95; }
+.md-require-zoom-fix foreignObject { font-size: var(--mermaid-font-zoom); }
 
 
 /* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
@@ -231,7 +194,6 @@ pre {
 
 html {
 	font-size: 16px;
-	-webkit-font-smoothing: antialiased;
 }
 
 html, body {
@@ -758,7 +720,6 @@ input {
 
 .dropdown-menu .divider {
 	border-color: #e5e5e5;
-	opacity: 1;
 }
 
 /* https://github.com/typora/typora-issues/issues/2046 */
@@ -785,10 +746,10 @@ input {
 	color: white;
 }
 
-
-</style><title>stock_recording</title>
+ :root {--mermaid-font-zoom:1em ;} 
+</style>
 </head>
-<body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><center><h1><b>David US Stock Recording</b></h1></center><p>&nbsp;</p><figure><table><thead><tr><th><span>(US STOCK)</span></th><th style='text-align:left;' ><strong><span>Stock symbol</span></strong></th><th><strong><span>Company</span></strong></th><th><span>Broker</span></th><th><span>Buy Price</span></th><th><span>Sell Price</span></th><th><strong><span>Shard</span></strong></th><th><span>Fee(Buy)</span></th><th><span>Fee(SELL)</span></th><th><span>dividend (Lasted)</span></th><th><span>Profit</span></th></tr></thead><tbody><tr><td><span>1</span></td><td style='text-align:left;' ><span>DOCN</span></td><td><span>DigitalOcean Holdings, Inc.</span></td><td><span>CITIBANK(HK)</span></td><td><span>82.9 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>1 USD</span></td><td>&nbsp;</td><td><span>N/A</span></td><td>&nbsp;</td></tr><tr><td><span>2 (SELL)</span></td><td style='text-align:left;' ><span>ZNGA</span></td><td><span>Zynga Inc.</span></td><td><span>CITIBANK(HK)</span></td><td><span>6.3 USD</span></td><td><span>8.85 USD</span></td><td><span>0</span></td><td><span>1 USD</span></td><td><span>1.01 USD</span></td><td><span>N/A</span></td><td><span>+ 0.54 USD</span></td></tr><tr><td><span>3 (SELL)</span></td><td style='text-align:left;' ><span>KO</span></td><td><span>The Coca-Cola Company</span></td><td><span>CITIBANK(HK)</span></td><td><span>60.3 * 2 = 120.6 USD</span></td><td><span>62.2 * 2 = 124.4 USD</span></td><td><span>2</span></td><td><span>1 USD</span></td><td><span>1.01 USD</span></td><td><span>N/A</span></td><td><span>+ 1.79 USD</span></td></tr><tr><td><span>4 (SELL)</span></td><td style='text-align:left;' ><span>JNJ</span></td><td><span>Johnson &amp; Johnson</span></td><td><span>CITIBANK(HK)</span></td><td><span>168.7 USD</span></td><td><span>172 USD</span></td><td><span>1</span></td><td><span>1 USD</span></td><td><span>1.01 USD</span></td><td><span>N/A</span></td><td><span>+ 1.29 USD</span></td></tr><tr><td><span>5</span></td><td style='text-align:left;' ><span>NIO</span></td><td><span>NIO Inc.</span></td><td><span>GoTrade</span></td><td><span>29.62 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>0 USD</span></td><td>&nbsp;</td><td><span>N/A</span></td><td>&nbsp;</td></tr><tr><td><span>6</span></td><td style='text-align:left;' ><span>AAPL</span></td><td><span>Apple Inc.</span></td><td><span>FUTU</span></td><td><span>FREE</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>0 USD</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>7</span></td><td style='text-align:left;' ><span>MO</span></td><td><span>Altria Group, Inc.</span></td><td><span>FUTU</span></td><td><span>50.2 * 2 = 100.4 USD</span></td><td>&nbsp;</td><td><span>2</span></td><td><span>2 USD</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>8</span></td><td style='text-align:left;' ><span>IBM</span></td><td><span>International Business Machines Corporation</span></td><td><span>FUTU</span></td><td><span>122 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>1.99 USD</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>9</span></td><td style='text-align:left;' ><span>KO</span></td><td><span>The Coca-Cola Company</span></td><td><span>FUTU</span></td><td><span>59.7 * 5 = 298.5 USD</span></td><td>&nbsp;</td><td><span>5</span></td><td><span>2.01 USD</span></td><td>&nbsp;</td><td><span>+ 1.54 USD</span></td><td>&nbsp;</td></tr><tr><td><span>10</span></td><td style='text-align:left;' ><span>DOCN</span></td><td><span>DigitalOcean Holdings, Inc.</span></td><td><span>FUTU</span></td><td><span>51.1 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>1.99 USD</span></td><td>&nbsp;</td><td><span>N/A</span></td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p></div></div>
+<body class='typora-export'>
+<div id='write'  class=''><center><h1><b>David US Stock Recording</b></h1></center><p>&nbsp;</p><figure><table><thead><tr><th><span>(US STOCK)</span></th><th style='text-align:left;' ><strong><span>Stock symbol</span></strong></th><th><strong><span>Company</span></strong></th><th><span>Broker</span></th><th><span>Buy Price</span></th><th><span>Sell Price</span></th><th><strong><span>Shard</span></strong></th><th><span>Fee(Buy)</span></th><th><span>Fee(SELL)</span></th><th><span>dividend (Lasted)</span></th><th><span>Profit</span></th></tr></thead><tbody><tr><td><span>1</span></td><td style='text-align:left;' ><span>DOCN</span></td><td><span>DigitalOcean Holdings, Inc.</span></td><td><span>CITIBANK(HK)</span></td><td><span>82.9 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>1 USD</span></td><td>&nbsp;</td><td><span>N/A</span></td><td>&nbsp;</td></tr><tr><td><span>2 (SELL)</span></td><td style='text-align:left;' ><span>ZNGA</span></td><td><span>Zynga Inc.</span></td><td><span>CITIBANK(HK)</span></td><td><span>6.3 USD</span></td><td><span>8.85 USD</span></td><td><span>0</span></td><td><span>1 USD</span></td><td><span>1.01 USD</span></td><td><span>N/A</span></td><td><span>+ 0.54 USD</span></td></tr><tr><td><span>3 (SELL)</span></td><td style='text-align:left;' ><span>KO</span></td><td><span>The Coca-Cola Company</span></td><td><span>CITIBANK(HK)</span></td><td><span>60.3 * 2 = 120.6 USD</span></td><td><span>62.2 * 2 = 124.4 USD</span></td><td><span>2</span></td><td><span>1 USD</span></td><td><span>1.01 USD</span></td><td><span>N/A</span></td><td><span>+ 1.79 USD</span></td></tr><tr><td><span>4 (SELL)</span></td><td style='text-align:left;' ><span>JNJ</span></td><td><span>Johnson &amp; Johnson</span></td><td><span>CITIBANK(HK)</span></td><td><span>168.7 USD</span></td><td><span>172 USD</span></td><td><span>1</span></td><td><span>1 USD</span></td><td><span>1.01 USD</span></td><td><span>N/A</span></td><td><span>+ 1.29 USD</span></td></tr><tr><td><span>5</span></td><td style='text-align:left;' ><span>NIO</span></td><td><span>NIO Inc.</span></td><td><span>GoTrade</span></td><td><span>29.62 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>0 USD</span></td><td>&nbsp;</td><td><span>N/A</span></td><td>&nbsp;</td></tr><tr><td><span>6</span></td><td style='text-align:left;' ><span>AAPL</span></td><td><span>Apple Inc.</span></td><td><span>FUTU</span></td><td><span>FREE</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>0 USD</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>7</span></td><td style='text-align:left;' ><span>MO</span></td><td><span>Altria Group, Inc.</span></td><td><span>FUTU</span></td><td><span>50.2 * 2 = 100.4 USD</span></td><td>&nbsp;</td><td><span>2</span></td><td><span>2 USD</span></td><td>&nbsp;</td><td><span>+ 1.26 USD</span></td><td>&nbsp;</td></tr><tr><td><span>8</span></td><td style='text-align:left;' ><span>IBM</span></td><td><span>International Business Machines Corporation</span></td><td><span>FUTU</span></td><td><span>122 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>1.99 USD</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>9</span></td><td style='text-align:left;' ><span>KO</span></td><td><span>The Coca-Cola Company</span></td><td><span>FUTU</span></td><td><span>59.7 * 5 = 298.5 USD</span></td><td>&nbsp;</td><td><span>5</span></td><td><span>2.01 USD</span></td><td>&nbsp;</td><td><span>+ 1.54 USD</span></td><td>&nbsp;</td></tr><tr><td><span>10</span></td><td style='text-align:left;' ><span>DOCN</span></td><td><span>DigitalOcean Holdings, Inc.</span></td><td><span>FUTU</span></td><td><span>51.1 USD</span></td><td>&nbsp;</td><td><span>1</span></td><td><span>1.99 USD</span></td><td>&nbsp;</td><td><span>N/A</span></td><td>&nbsp;</td></tr><tr><td><span>11</span></td><td style='text-align:left;' ><span>C</span></td><td><span>Citigroup Inc.</span></td><td><span>FUTU</span></td><td><span>54.6 * 2 = 109.2 USD</span></td><td>&nbsp;</td><td><span>2</span></td><td><span>2 USD</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>12</span></td><td style='text-align:left;' ><span>BAC</span></td><td><span>Bank of America Corporation</span></td><td><span>FUTU</span></td><td><span>36 * 2 = 72 USD</span></td><td>&nbsp;</td><td><span>2</span></td><td><span>2 USD</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p></div>
 </body>
 </html>
